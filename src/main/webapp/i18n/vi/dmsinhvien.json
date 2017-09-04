@@ -1,0 +1,23 @@
+{
+    "demomysqlApp": {
+        "dmsinhvien" : {
+            "home": {
+                "title": "Dmsinhviens",
+                "createLabel": "Thêm mới một Dmsinhvien",
+                "createOrEditLabel": "Thêm mới hoặc cập nhật Dmsinhvien"
+            },
+            "created": "Một Dmsinhvien mới được tạo với định danh {{ param }}",
+            "updated": "Một Dmsinhvien cập nhật với định danh {{ param }}",
+            "deleted": "Một Dmsinhvien đã xóa với định danh {{ param }}",
+            "delete": {
+                "question": "Bạn có chắc là muốn xóa Dmsinhvien {{ id }}?"
+            },
+            "detail": {
+                "title": "Dmsinhvien"
+            },
+            "ma": "Ma",
+            "ten": "Ten",
+            "ngaysinh": "Ngaysinh"
+        }
+    }
+}

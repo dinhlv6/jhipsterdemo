@@ -1,0 +1,60 @@
+<div>
+    <h2 data-translate="demomysqlApp.dmsinhvien.home.title">Dmsinhviens</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="dmsinhvien.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span  data-translate="demomysqlApp.dmsinhvien.home.createLabel">
+                        Create new Dmsinhvien
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr>
+                    <th><span data-translate="global.field.id">ID</span></th>
+                    <th><span data-translate="demomysqlApp.dmsinhvien.ma">Ma</span></th>
+                    <th><span data-translate="demomysqlApp.dmsinhvien.ten">Ten</span></th>
+                    <th><span data-translate="demomysqlApp.dmsinhvien.ngaysinh">Ngaysinh</span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="dmsinhvien in vm.dmsinhviens track by dmsinhvien.id">
+                    <td><a ui-sref="dmsinhvien-detail({id:dmsinhvien.id})">{{dmsinhvien.id}}</a></td>
+                    <td>{{dmsinhvien.ma}}</td>
+                    <td>{{dmsinhvien.ten}}</td>
+                        <td>{{dmsinhvien.ngaysinh | date:'mediumDate'}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="dmsinhvien-detail({id:dmsinhvien.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.view"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="dmsinhvien.edit({id:dmsinhvien.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.edit"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="dmsinhvien.delete({id:dmsinhvien.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-sm-down" data-translate="entity.action.delete"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

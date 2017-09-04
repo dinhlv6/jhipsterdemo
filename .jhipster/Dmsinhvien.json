@@ -1,0 +1,32 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "ma",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "50"
+        },
+        {
+            "fieldName": "ten",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "255"
+        },
+        {
+            "fieldName": "ngaysinh",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20170901234900",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "dm_sinhvien",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}
