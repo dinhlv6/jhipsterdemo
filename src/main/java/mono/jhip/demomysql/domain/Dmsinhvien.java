@@ -23,8 +23,7 @@ public class Dmsinhvien implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Size(max = 50)
-    @Column(name = "ma", length = 50)
+    @Column(name = "ma")
     private String ma;
 
     @Size(max = 255)

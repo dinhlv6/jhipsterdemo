@@ -64,6 +64,9 @@
     "proxy-middleware": "0.15.0",
     "run-sequence": "1.2.2",
     "xml2js": "0.4.17",
+    "generator-jhipster-nav-element": "1.4.1",
+    "generator-jhipster-docker": "2.2.0",
+    "generator-jhipster-elasticsearch-reindexer": "1.0.1",
     "yargs": "5.0.0"
   },
   "engines": {

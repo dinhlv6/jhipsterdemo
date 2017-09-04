@@ -17,13 +17,7 @@
             <label class="control-label" data-translate="demomysqlApp.dmsinhvien.ma" for="field_ma">Ma</label>
             <input type="text" class="form-control" name="ma" id="field_ma"
                     ng-model="vm.dmsinhvien.ma"
-                    ng-maxlength="50"/>
-            <div ng-show="editForm.ma.$invalid">
-                <p class="help-block"
-                    ng-show="editForm.ma.$error.maxlength" data-translate="entity.validation.maxlength" translate-value-max="50">
-                    This field cannot be longer than 50 characters.
-                </p>
-            </div>
+                    />
         </div>
         <div class="form-group">
             <label class="control-label" data-translate="demomysqlApp.dmsinhvien.ten" for="field_ten">Ten</label>
@@ -40,7 +34,7 @@
         <div class="form-group">
             <label class="control-label" data-translate="demomysqlApp.dmsinhvien.ngaysinh" for="field_ngaysinh">Ngaysinh</label>
                 <div class="input-group">
-                    <input id="field_ngaysinh" type="text" class="form-control" name="ngaysinh" uib-datepicker-popup="{{dateformat}}" ng-model="vm.dmsinhvien.ngaysinh" is-open="vm.datePickerOpenStatus.ngaysinh"
+                    <input id="field_ngaysinh" type="text" class="form-control" name="ngaysinh" uib-datepicker-popup="dd/MM/yyyy" ng-model="vm.dmsinhvien.ngaysinh" is-open="vm.datePickerOpenStatus.ngaysinh"
                     />
                     <span class="input-group-btn">
                         <button type="button" class="btn btn-default" ng-click="vm.openCalendar('ngaysinh')"><i class="glyphicon glyphicon-calendar"></i></button>

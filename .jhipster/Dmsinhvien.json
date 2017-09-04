@@ -5,10 +5,7 @@
         {
             "fieldName": "ma",
             "fieldType": "String",
-            "fieldValidateRules": [
-                "maxlength"
-            ],
-            "fieldValidateRulesMaxlength": "50"
+            "fieldValidateRules": []
         },
         {
             "fieldName": "ten",
@@ -23,7 +20,7 @@
             "fieldType": "LocalDate"
         }
     ],
-    "changelogDate": "20170901234900",
+    "changelogDate": "20170904093837",
     "dto": "no",
     "service": "no",
     "entityTableName": "dm_sinhvien",

@@ -40,8 +40,8 @@ public class CacheConfiguration {
             cm.createCache(mono.jhip.demomysql.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(mono.jhip.demomysql.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(mono.jhip.demomysql.domain.User.class.getName() + ".authorities", jcacheConfiguration);
-           cm.createCache(mono.jhip.demomysql.domain.Dmsinhvien.class.getName(), jcacheConfiguration);
-           // jhipster-needle-ehcache-add-entry
+            cm.createCache(mono.jhip.demomysql.domain.Dmsinhvien.class.getName(), jcacheConfiguration);
+            // jhipster-needle-ehcache-add-entry
         };
     }
 }

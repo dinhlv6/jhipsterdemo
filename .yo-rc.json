@@ -22,7 +22,7 @@
     "buildTool": "maven",
     "enableSocialSignIn": false,
     "enableSwaggerCodegen": false,
-    "jwtSecretKey": "66b5446e68dde27e8cc7d4d795aa2a48aaeff336",
+    "jwtSecretKey": "202f7f2d69c1b5ef24d572691e6b28fea46fdc32",
     "clientFramework": "angular1",
     "useSass": true,
     "clientPackageManager": "yarn",
@@ -32,7 +32,20 @@
       "protractor"
     ],
     "jhiPrefix": "jhi",
-    "otherModules": [],
+    "otherModules": [
+      {
+        "name": "generator-jhipster-nav-element",
+        "version": "1.4.1"
+      },
+      {
+        "name": "generator-jhipster-docker",
+        "version": "2.2.0"
+      },
+      {
+        "name": "generator-jhipster-elasticsearch-reindexer",
+        "version": "1.0.1"
+      }
+    ],
     "enableTranslation": true,
     "nativeLanguage": "en",
     "languages": [
